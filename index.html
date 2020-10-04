@@ -14,35 +14,23 @@
 </div>
     </div>
       <div class="container">
-        <h2>Enter Your Details Here!</h2>
+        <h2>Please enter your date of birth details below!</h2>
         <form name="myForm" class="form" onsubmit="validate();">
-          <div class="form-group">
+          <div class="container">
             <label for="number">Year:</label>
-            <input type="number" class="form-control" id="year" name="year">
-          </div>
-          <div class="form-group">
+            <input type="number" id="year" name="year">
             <label for="month">Month:</label>
-            <input type="number" class="form-control" id="month" name="month">
-          </div>
-          <div class="form-group">
+            <input type="number" id="month" name="month">
             <label for="date">Day:</label>
-            <input type="number" class="form-control" id="date"  name="date">
-          </div>
-          <div class="form-group">
+            <input type="number"  id="date"  name="date">
             <label for="month">Gender</label><br>
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="gender" id="male">&nbsp; Male 
-              </label>
-            </div>
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="gender" id="female">&nbsp; Female 
-              </label>
-            </div>
+                <input type="radio" name="gender" id="male">&nbsp; Male 
+            </label>
+              <label>
+                <input type="radio" name="gender" id="female">&nbsp; Female 
+              </label><br>
+              <button type="submit" class="btn btn-primary" onclick="findName();">Submit</button>
           </div>
-          <button type="submit" class="btn btn-primary" onclick="findName();">Submit</button>
-          <br>
         </form>
        
       </div>
