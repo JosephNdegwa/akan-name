@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akan</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghanian Names</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body> 
-    <div class="container">
-        <div class="jumbotron">
-          <h1 class="display-7">Akan NAmes</h1>
-          <p><i>Would you like to know your <b>Ghanian</b> name according to the day of the week you were born?</i></p>
+  <div class="container">  
+    <div class="jumbotron">
+  <h1 class="display-7">Akan NAmes</h1>
+  <p><i>Would you like to know your <b>Ghanian</b> name according to the day of the week you were born?</i></p>
+</div>
+    </div>
+      <div class="container">
+        <h2>Enter Your Details Here!</h2>
+        <form name="myForm" class="form" onsubmit="validate();">
+          <div class="form-group">
+            <label for="number">Year:</label>
+            <input type="number" class="form-control" id="year" name="year">
           </div>
-        </div>
-    <form class="container" id="form">
-
+          <div class="form-group">
+            <label for="month">Month:</label>
+            <input type="number" class="form-control" id="month" name="month">
+          </div>
+          <div class="form-group">
+            <label for="date">Day:</label>
+            <input type="number" class="form-control" id="date"  name="date">
+          </div>
+          <div class="form-group">
+            <label for="month">Gender</label><br>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="gender" id="male">&nbsp; Male 
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="gender" id="female">&nbsp; Female 
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" onclick="findName();">Submit</button>
+          <br>
+        </form>
        
-
-
-
-
+      </div>
+  </div>
       
-          </div>
-      
-    
-      </form>
-    
-   
-    
-   <script src="/js/script.js"></script> 
+
+<script src="js/script.js"></script>
 </body>
 </html>
